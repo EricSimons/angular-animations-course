@@ -4,7 +4,7 @@
   "version": "v1.0",
   "twitter": "EricSimons40",
   "coverImage": "images/cover.jpg",
-  "description": "In this tutorial you'll learn how to use AngularJS and the Ionic Framework to build robust, silky smooth hybrid mobile apps.",
+  "description": "In this tutorial you'll learn how to use Angular's ngAnimate to create slick animations.",
   "git": "https://github.com/EricSimons/angular-animations-course",
 
   "author": {
