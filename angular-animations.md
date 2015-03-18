@@ -1,3 +1,4 @@
+
 In the past, making web apps feel delightful with animations required programmatically adding and removing classes to DOM elements. For example, if I wanted to have an element bounce in using a custom CSS class using jQuery, it would look something like this: `$('.item').show().addClass('bounceIn')`. If I wanted to hide the element afterwards with a custom fade out animation, I would then have to call `$('.item').hide().addClass('fadeOut')`.  As you probably know from experience, having this sort of logic littered throughout your javascript files quickly becomes hard to manage as your application grows in size.
 
 Before we dive into how Angular solves this problem, lets first think about when you typically want to animate DOM elements: after user interaction with your app, which then triggers displaying / hiding elements, moving elements in a list around, etc. Sound familiar? That's right -- ng-hide/ng-show, ng-if, ng-repeat, and the other directives provided by Angular automatically deal with this functionality for us. **Wouldn't it be great if the ng-hide/ng-show, ng-if, ng-repeat, etc directives automatically added CSS classes to their respective DOM elements that we could hook into for providing animations?**
@@ -158,10 +159,6 @@ ngAnimate provides CSS classes for ng-repeat elements when they're appearing, di
 
 {x: ng-repeat-animations}
 **[See this code in action and experiment with it](http://codepen.io/EricSimons/pen/VYGQwX)**
-
-<input type="text" ng-model="search.name" />
-    
-    <div class="item" ng-repeat="person in test.people | filter:search">
 
 As shown in the video above, these animations are especially neat when your ng-repeat is using dynamic filters or ordering. It provides immediate feedback to the user that the application is changing based on their input in a very delightful way.
 
