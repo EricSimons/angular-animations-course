@@ -1,3 +1,4 @@
+# Overview
 
 In the past, making web apps feel delightful with animations required programmatically adding and removing classes to DOM elements. For example, if I wanted to have an element bounce in using a custom CSS class using jQuery, it would look something like this: `$('.item').show().addClass('bounceIn')`. If I wanted to hide the element afterwards with a custom fade out animation, I would then have to call `$('.item').hide().addClass('fadeOut')`.  As you probably know from experience, having this sort of logic littered throughout your javascript files quickly becomes hard to manage as your application grows in size.
 
@@ -211,14 +212,23 @@ Another cool benefit of this, as seen in the video above, is the ability to fire
 We've covered some basic usage of ngAnimate with ng-show/ng-hide, ng-repeat and ng-class. This knowledge can be directly applied to animating many of the other directives present in Angular - below is a list all the directives with their corresponding CSS classes:
 
 **ngRepeat**: enter, leave and move
+
 **ngView**: enter and leave
+
 **ngInclude**: enter and leave
+
 **ngSwitch**: enter and leave
+
 **ngIf**: enter and leave
+
 **ngClass**: add and remove (the CSS class(es) present)
+
 **ngShow & ngHide**: add and remove (the ng-hide class value)
+
 **form & ngModel**: add and remove (dirty, pristine, valid, invalid & all other validations)
+
 **ngMessages**: add and remove (ng-active & ng-inactive)
+
 **ngMessage**: enter and leave
 
 {x: ngAnimate-docs}
